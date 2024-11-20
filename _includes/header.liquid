@@ -1,34 +1,4 @@
-<header>
-    <nav id="ladysnake-navbar">
-        <ul class="header-nav-list">
-            <li class="header-nav-item"><a class="header-nav-btn" href="/">Home</a></li>
-            <li class="header-nav-item"><a class="header-nav-btn" href="/about.html">About Us</a></li>
-            <li class="header-nav-item dropdown">
-                <input type="checkbox" autocomplete="off" id="mod-list-dropdown-toggle">
-                <label class="header-nav-btn dropdown-toggle" for="mod-list-dropdown-toggle">Mods </label>
-                <span class="dropdown-backdrop"></span>
-                <ul id="mod-list-dropdown" class="dropdown-menu">
-                    {% for mod in site.mods %}
-                        {% unless mod.discontinued %}
-                        <li class="dropdown-item">
-                            <a href="{{ mod.link }}" title="{{ mod.title }}" class="mod-dropdown-link">
-                                {{ mod.title }}
-                            </a>
-                        </li>
-                        {% endunless %}
-                    {% endfor %}
-                    <li>
-                        <hr/>
-                    </li>
-                    <li class="dropdown-item">
-                        <a href="/#discontinued-mods" title="Discontinued Mods" class="mod-dropdown-link">
-                            Discontinued Mods
-                        </a>
-                    </li>
-                    <!-- Will be adding Fabric libraries here "shortly" -->
-                </ul>
-            </li>
-            <li class="header-nav-item"><a href="/oldsite/" class="header-nav-btn">Old Site</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- Header Partial -->
+<!-- This Partial is in charge of the site header. -->
+
+This is the header.
