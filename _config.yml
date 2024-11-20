@@ -1,0 +1,6 @@
+
+title: Skrillx's Site
+
+# Build settings
+plugins:
+  - jekyll-feed
